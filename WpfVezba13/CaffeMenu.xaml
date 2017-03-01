@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfVezba13.CaffeMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfVezba13"
+        mc:Ignorable="d"
+        Title="CaffeMenu" Height="323.398" Width="787.688" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Slike/2.png" Loaded="Window_Loaded">
+    <Grid Background="LightBlue">
+        <Border Background="LightYellow" BorderBrush="Gray" CornerRadius="15" BorderThickness="5" HorizontalAlignment="Left" Height="192" Margin="11,45,0,0" VerticalAlignment="Top" Width="215"/>
+        <Border Background="LightYellow" BorderBrush="Gray" CornerRadius="15" BorderThickness="5" HorizontalAlignment="Left" Height="192" Margin="238,45,0,0" VerticalAlignment="Top" Width="215"/>
+        <CheckBox x:Name="checkBoxKafa" Content="Kafa: 120 din" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,65,0,0" FontWeight="Bold"/>
+        <CheckBox x:Name="checkBoxEspresso" Content="Espresso: 130 din" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,96,0,0" FontWeight="Bold"/>
+        <CheckBox x:Name="checkBoxCappuchino" Content="Cappuchino: 130 din" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,128,0,0" FontWeight="Bold"/>
+        <CheckBox x:Name="checkBoxMachiato" Content="Macchiato: 140 din" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,162,0,0" FontWeight="Bold"/>
+        <CheckBox x:Name="checkBoxLav" Content="Lav: 120 din" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="259,65,0,0" FontWeight="Bold"/>
+        <CheckBox x:Name="checkBoxJelen" Content="Jelen: 120 din" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="259,96,0,0" FontWeight="Bold"/>
+        <CheckBox x:Name="checkBoxBeks" Content="Beks: 140 din" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="259,128,0,0" FontWeight="Bold"/>
+        <CheckBox x:Name="CheckBoxHainiken" Content="Heiniken: 160 din" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="259,162,0,0" FontWeight="Bold"/>
+        <TextBox x:Name="textBoxKafa" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" Margin="167,63,0,0"/>
+        <TextBox x:Name="textBoxEspresso" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" Margin="167,96,0,0"/>
+        <TextBox x:Name="textBoxCappuchino" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" Margin="167,128,0,0"/>
+        <TextBox x:Name="textBoxMachiato" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" Margin="167,160,0,0"/>
+        <TextBox x:Name="textBoxLav" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" Margin="393,63,0,0"/>
+        <TextBox x:Name="textBoxJelen" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" Margin="393,96,0,0"/>
+        <TextBox x:Name="textBoxBeks" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" Margin="393,128,0,0"/>
+        <TextBox x:Name="textBoxHainiken" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="37" Margin="393,160,0,0"/>
+        <Button x:Name="buttonNaruci" Content="Naruci" HorizontalAlignment="Left" Margin="151,252,0,0" VerticalAlignment="Top" Width="75" Click="buttonNaruci_Click" />
+        <Button x:Name="button2" Content="Otkazi" HorizontalAlignment="Left" Margin="321,252,0,0" VerticalAlignment="Top" Width="75" Click="buttonOtkazi_Click"/>
+        <Button x:Name="button3" Content="Reset" HorizontalAlignment="Left" Margin="238,252,0,0" VerticalAlignment="Top" Width="75" Click="buttonReset_Click"/>
+        <Button x:Name="button4" Content="Plati" HorizontalAlignment="Left" Margin="576,252,0,0" VerticalAlignment="Top" Width="75" Click="buttonPlati_Click"/>
+        <Label x:Name="label" Content="Topli napici" HorizontalAlignment="Left" Margin="32,5,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Showcard Gothic" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Alkohol" HorizontalAlignment="Left" Margin="273,5,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="textBoxPrikazi" BorderBrush="Gray" BorderThickness="5" HorizontalAlignment="Left" Height="35" Margin="464,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" IsReadOnly="True"/>
+        <TextBox x:Name="textBoxPDV" BorderBrush="Gray" BorderThickness="5" HorizontalAlignment="Left" Height="35" Margin="621,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" IsReadOnly="True"/>
+        <Label x:Name="label2" Content="PDV" HorizontalAlignment="Left" Margin="660,15,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="label3" Content="Racun" HorizontalAlignment="Left" Margin="490,15,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="textBoxPDV1" BorderBrush="Gray" BorderThickness="5" HorizontalAlignment="Left" Height="129" Margin="542,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" IsReadOnly="True"/>
+    </Grid>
+</Window>
